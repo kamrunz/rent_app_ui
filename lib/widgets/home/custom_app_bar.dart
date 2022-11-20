@@ -14,7 +14,9 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           children: [
             IconButton(
               onPressed: () {},
-              icon: SvgPicture.asset('assets/icons/menu.svg'),
+              icon: SvgPicture.asset(
+                'assets/icons/menu.svg',
+              ),
             ),
             CircleAvatar(
               backgroundImage: AssetImage('assets/images/avatar.jpeg'),
