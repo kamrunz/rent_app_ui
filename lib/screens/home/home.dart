@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:rent_app/widgets/home/best_offer.dart';
 import 'package:rent_app/widgets/home/categories.dart';
 import 'package:rent_app/widgets/home/custom_app_bar.dart';
+import 'package:rent_app/widgets/home/custom_bottom_navigation_bar.dart';
 import 'package:rent_app/widgets/home/recommended_house.dart';
 import 'package:rent_app/widgets/home/search_input.dart';
 import 'package:rent_app/widgets/home/welcome_text.dart';
@@ -29,6 +30,7 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
+      bottomNavigationBar: CustomBottomNavigationBar(),
     );
   }
 }
