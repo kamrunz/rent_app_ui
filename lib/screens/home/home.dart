@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rent_app/widgets/home/best_offer.dart';
 import 'package:rent_app/widgets/home/categories.dart';
 import 'package:rent_app/widgets/home/custom_app_bar.dart';
 import 'package:rent_app/widgets/home/recommended_house.dart';
@@ -17,13 +18,14 @@ class HomePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            WelcomeText(),
-            SearchInput(),
-            Categories(),
+            const WelcomeText(),
+            const SearchInput(),
+            const Categories(),
             const SizedBox(
               height: 20,
             ),
             RecommendedHouse(),
+            BestOffer(),
           ],
         ),
       ),

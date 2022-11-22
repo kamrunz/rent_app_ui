@@ -11,6 +11,10 @@ class House {
           'assets/images/house01.jpeg'),
       House('The Moon House', 'P455, Chhatak, Sylhet',
           'assets/images/house02.jpeg'),
+      House('The Moon House', 'P455, Chhatak, Sylhet',
+          'assets/images/house01.jpeg'),
+      House('The Moon House', 'P455, Chhatak, Sylhet',
+          'assets/images/house02.jpeg'),
     ];
   }
 
