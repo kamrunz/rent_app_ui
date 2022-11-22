@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rent_app/models/house.dart';
+import 'package:rent_app/screens/detail/detail.dart';
 import 'package:rent_app/widgets/circle_icon_button.dart';
 
 class RecommendedHouse extends StatelessWidget {
@@ -12,12 +13,12 @@ class RecommendedHouse extends StatelessWidget {
       child: ListView.separated(
           scrollDirection: Axis.horizontal,
           itemBuilder: (context, index) => GestureDetector(
-                // onTap: () {
-                //   Navigator.of(context)
-                //       .push(MaterialPageRoute(builder: (context) {
-                //     // return DetailPage(house: recommendedList[index]);
-                //   }));
-                // },
+                onTap: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) {
+                    return DetailPage(house: recommendedList[index]);
+                  }));
+                },
                 child: Container(
                   width: 230,
                   padding: EdgeInsets.all(10),
